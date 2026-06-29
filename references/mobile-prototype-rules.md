@@ -43,8 +43,8 @@ When the user asks for a business flow diagram, page-flow overview, or final pro
 
 - Capture the current HTML page states at that moment.
 - Hide temporary review controls such as the interaction hint toggle.
-- Generate one integrated image that shows the relevant states and transitions.
-- Save that final diagram into `preview-screenshots/`.
+- Generate the required final diagram image or images that show the relevant states and transitions.
+- Save final diagrams into `preview-screenshots/`.
 
 ## Mobile UI Standards
 
@@ -114,6 +114,7 @@ When generating page-flow overview images:
 
 - Use fresh screenshots from the current HTML.
 - Capture required page states only at diagram-generation time; do not rely on old per-page screenshots from earlier prototype edits.
+- If the prototype has mutually exclusive business states, such as first sign-in versus already signed-in, do not merge those states into one flow diagram. Generate a separate flow diagram for each state, and include only the buttons, modals, and transitions that truly exist in that state.
 - Hide the interaction hint control while capturing screenshots.
 - Save the diagram into `preview-screenshots/`.
 - Prefer orange orthogonal connectors.

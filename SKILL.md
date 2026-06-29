@@ -44,7 +44,8 @@ Before editing or creating the prototype, read `references/mobile-prototype-rule
    - Check hash navigation, modal behavior, mobile width, no horizontal scroll, and main clickable paths.
    - Confirm hotspot hints mark only true interactions, including modal-only marking when a modal is open.
    - Do not generate standalone page screenshots after every prototype edit unless the user explicitly asks for them.
-   - When the user asks for a business/page-flow overview, capture all needed current page states at that point and generate one integrated flow image.
+   - When the user asks for a business/page-flow overview, capture all needed current page states at that point and generate final flow image(s).
+   - If business states are mutually exclusive, generate separate flow diagrams per state instead of merging them into one diagram.
 
 6. Deliver:
    - Link to the edited HTML file.
