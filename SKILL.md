@@ -43,7 +43,8 @@ Before editing or creating the prototype, read `references/mobile-prototype-rule
    - Open the prototype with a browser when possible.
    - Check hash navigation, modal behavior, mobile width, no horizontal scroll, and main clickable paths.
    - Confirm hotspot hints mark only true interactions, including modal-only marking when a modal is open.
-   - Generate updated screenshots for visual changes.
+   - Do not generate standalone page screenshots after every prototype edit unless the user explicitly asks for them.
+   - When the user asks for a business/page-flow overview, capture all needed current page states at that point and generate one integrated flow image.
 
 6. Deliver:
    - Link to the edited HTML file.
@@ -69,4 +70,4 @@ Ask a concise clarification only if the missing rule would materially change the
 - Keep controls familiar: links for navigation, inputs for fields, radio/checkbox controls for choices.
 - Keep copy in Chinese when the source material is Chinese.
 - Use concise visible labels suitable for business review.
-- Store generated preview images under `preview-screenshots/`.
+- Store generated flow diagrams and explicitly requested screenshots under `preview-screenshots/`.

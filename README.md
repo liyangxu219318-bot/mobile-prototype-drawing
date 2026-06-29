@@ -51,6 +51,7 @@ git clone https://github.com/liyangxu219318-bot/mobile-prototype-drawing.git "$e
 - 默认只生成或维护一个 `index.html`。
 - 多页面原型使用 hash 路由，例如 `#home`、`#list`、`#confirm`。
 - 预览截图和流程图统一放入 `preview-screenshots/`。
+- 默认不在每次原型修改后单独生成页面截图；最终生成业务串联图时再统一截取所需页面状态。
 - 交互提示只基于真实 HTML 交互元素生成，不标记纯视觉按钮。
 - 弹窗打开时，交互提示只标记弹窗内真实交互点。
 - 模拟浏览器壳里的纯展示元素应保持静态，例如无实际动作的 `...` 不应写成链接。

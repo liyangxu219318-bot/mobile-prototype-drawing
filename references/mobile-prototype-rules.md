@@ -28,10 +28,23 @@ When both are present, use screenshots for visual form and business rules for be
 ## File Organization
 
 - Main prototype: the current user-opened HTML or `index.html`
-- Preview screenshots and diagrams: `preview-screenshots/`
+- Final flow diagrams and explicitly requested screenshots: `preview-screenshots/`
 - Project policy: `AGENTS.md`, if present
 
 Never leave generated screenshots or temporary preview images in the project root.
+
+## Screenshot Policy
+
+Do not generate standalone page preview screenshots after every prototype edit by default.
+
+Use browser automation for verification, but avoid saving one screenshot per page/state unless the user explicitly asks for screenshots.
+
+When the user asks for a business flow diagram, page-flow overview, or final prototype overview:
+
+- Capture the current HTML page states at that moment.
+- Hide temporary review controls such as the interaction hint toggle.
+- Generate one integrated image that shows the relevant states and transitions.
+- Save that final diagram into `preview-screenshots/`.
 
 ## Mobile UI Standards
 
@@ -100,6 +113,7 @@ For external-link handoffs:
 When generating page-flow overview images:
 
 - Use fresh screenshots from the current HTML.
+- Capture required page states only at diagram-generation time; do not rely on old per-page screenshots from earlier prototype edits.
 - Hide the interaction hint control while capturing screenshots.
 - Save the diagram into `preview-screenshots/`.
 - Prefer orange orthogonal connectors.
@@ -119,6 +133,7 @@ After meaningful changes, verify:
 - The page has no horizontal scroll at a mobile viewport.
 - Text does not obviously overlap.
 - Hotspot hints mark only true interactions, including modal-only behavior.
-- Screenshots or flow diagrams are updated when visual behavior changed.
+- Do not save standalone page screenshots just because visual behavior changed.
+- Flow diagrams are updated when the user asks for a business/page-flow overview.
 
 Prefer browser automation or local Chrome/Edge screenshots when available.
