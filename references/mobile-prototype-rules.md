@@ -120,7 +120,9 @@ When generating page-flow overview images:
 - Prefer orange orthogonal connectors.
 - Draw connectors from the concrete triggering button or link.
 - Use orange outlines to identify the trigger target.
+- Start and end connector lines at the outside edge of the orange target outline; do not let connector lines pass through the outlined button or hotspot box.
 - Use concise action labels such as `点击“调研问卷”`.
+- Place action labels in whitespace between screenshots or above/below screenshots. Labels must not cover prototype content, buttons, modals, fields, or other important UI. Reroute connector lines around screenshots when needed to keep labels off the prototype.
 - Do not copy unrelated layout or styling from a user's example unless requested; only borrow the connection style the user names.
 
 ## Verification Checklist
