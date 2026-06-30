@@ -1,4 +1,4 @@
 interface:
   display_name: "手机端原型绘制"
-  short_description: "根据截图或业务规则绘制单文件手机端 HTML 原型"
-  default_prompt: "Use $mobile-prototype-drawing to create a mobile H5 prototype from my screenshots or business rules."
+  short_description: "根据截图或业务规则绘制手机端 HTML 原型，支持交互提醒和水滴评审标注"
+  default_prompt: "Use $mobile-prototype-drawing to create a mobile H5 prototype from my screenshots or business rules, with review tools if needed."

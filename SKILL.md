@@ -1,6 +1,6 @@
 ---
 name: mobile-prototype-drawing
-description: Create or update mobile H5 static HTML prototypes from reference screenshots, business rules, workflow descriptions, field lists, approval flows, interaction requirements, hotspot hints, and page-flow diagrams. Use when Codex needs 手机端原型绘制, mobile prototype drawing, H5/mobile HTML prototypes, screenshot-to-static-HTML mobile pages, business-rule-driven mobile prototypes, interactive mobile page flows, prototype screenshots, hotspot/interaction marking, or page-flow overview diagrams.
+description: Create or update mobile H5 static HTML prototypes from reference screenshots, business rules, workflow descriptions, field lists, approval flows, interaction requirements, hotspot hints, review-assistant controls, waterdrop annotations, persistent review notes, and page-flow diagrams. Use when Codex needs 手机端原型绘制, mobile prototype drawing, H5/mobile HTML prototypes, screenshot-to-static-HTML mobile pages, business-rule-driven mobile prototypes, interactive mobile page flows, prototype screenshots, hotspot/interaction marking, waterdrop content annotation, persistent mobile prototype review markers, or page-flow overview diagrams.
 ---
 
 # 手机端原型绘制
@@ -38,6 +38,7 @@ Before editing or creating the prototype, read `references/mobile-prototype-rule
    - Use real HTML controls and links where behavior exists.
    - Keep visual-only controls static; do not make them links or bind empty events just for marking.
    - If the prototype needs discoverable click targets, use an optional hotspot layer based on real interactive elements.
+   - If the user asks for interaction hints, waterdrop notes, review annotations, or persistent review notes, add one draggable "评审工具" control that can expose interaction hints and waterdrop annotation tools.
 
 5. Verify:
    - Open the prototype with a browser when possible.
