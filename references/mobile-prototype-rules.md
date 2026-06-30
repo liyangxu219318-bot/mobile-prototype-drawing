@@ -121,6 +121,7 @@ In waterdrop annotation mode:
 - Store droplets as page-relative coordinates. Prefer percentages over pixels so notes survive viewport changes.
 - Let droplets be created on real interactive controls such as buttons, links, inputs, and modal actions when annotation mode is active.
 - Intercept annotation-mode taps/clicks before the underlying control handles them. Creating a droplet must not trigger the annotated button, close a modal, navigate, submit, or run other prototype interactions.
+- Suppress visible interaction effects while annotation mode is active. Do not leave hover, pressed, selected, expanded, focused, or active states caused only by placing a droplet on the underlying component.
 - After annotation mode is turned off, restore normal prototype interactions without requiring a refresh.
 - Allow droplets on modal content when the modal is the visible page state. Store enough state, such as `targetState` or `route`, so droplets created on a modal appear only with that modal state and hide when the modal is closed.
 - Do not create droplets on the review tool, review menus, existing droplets, annotation dialogs, note popovers, or temporary masks outside the visible content state.
@@ -164,6 +165,7 @@ When the review tool includes both interaction hints and waterdrop annotations:
 - Keep the hotspot mask layer non-intercepting with `pointer-events: none`.
 - Keep droplet buttons interactive so notes can be viewed, but exclude droplets from hotspot scans.
 - While waterdrop annotation mode is active, intercept taps/clicks in capture phase or an equivalent early handler so business controls underneath are not activated.
+- If the underlying component has hover/active visual effects, prefer an annotation overlay/capture handler or temporary suppression class so the prototype component does not visually react to annotation placement.
 - If a modal is open, hotspot scans should inspect only real interactive elements inside the modal.
 - After modal open/close, hash route changes, resize, and scroll, re-render hotspot masks, filter droplets to the current visible state, and reposition visible note popovers.
 - When exporting screenshots or flow diagrams, hide the review tool, hotspot masks, droplets, annotation dialogs, and note popovers unless the user explicitly asks for an annotated review screenshot.
